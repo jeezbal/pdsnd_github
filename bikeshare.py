@@ -122,8 +122,8 @@ def display_result(result, title):
             response = input('Type stop to abort, or enter for next records: ').lower()
             if response == "stop":
                 break
-            else:
-                i += n
+
+            i += n
         print('Display complete.  Enter to continue: ')
         response = input('')
         
