@@ -112,12 +112,13 @@ def display_result(result, title):
         x = len(result)
         i = 0
         while i < x:
-            if i+n < x:
-                print('Records {} to {}'.format(i+1,i+n))
-                print(result.iloc[i:i+n, :])
-            else:
+            if i+n >= x:
                 print('Records {} to {}'.format(i+1,x))
                 print(result.iloc[i:x, :])
+            else:
+                print('Records {} to {}'.format(i+1,i+n))
+                print(result.iloc[i:i+n, :])
+
             response = input('Type stop to abort, or enter for next records: ').lower()
             if response == "stop":
                 break
