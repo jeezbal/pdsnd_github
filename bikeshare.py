@@ -268,6 +268,7 @@ def main():
         if restart.lower() != 'yes':
             break
 
+# standard main execution
 
 if __name__ == "__main__":
 	main()
